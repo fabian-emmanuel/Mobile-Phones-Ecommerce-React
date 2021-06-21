@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100&family=Source+Sans+Pro:wght@200&display=swap");
+body {
+  font-family: Source Sans Pro, sans-serif;
+  background: #fceeee !important;
+  color: #232528; }
+
+.text-title {
+  font-family: Lobster, sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase; }
+
+.blue-text {
+  color: #2a2a72; }
+
+.light-blue-text {
+  color: #009ffd; }
+
+.logo {
+  width: 3rem;
+  height: 3rem; }
+
+.btn-style {
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background: transparent;
+  color: #009ffd;
+  border: 0.05rem solid #009ffd;
+  border-radius: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  margin: 0.2rem 0.5rem 0.2rem 0;
+  transition: all 0.5s ease-in-out; }
+  .btn-style:hover {
+    background: #009ffd;
+    color: #2a2a72; }
+  .btn-style:focus {
+    outline: none; }
+
+.cart-btn-style {
+  border-color: #ffa400;
+  color: #ffa400; }
+  .cart-btn-style:hover {
+    background: #ffa400;
+    color: #2a2a72; }
+
+.nav-style {
+  background: #2a2a72; }
+  .nav-style .nav-link {
+    color: #fceeee !important;
+    font-size: 1.5rem;
+    text-transform: capitalize; }
+
+ul {
+  list-style-type: none !important; }
+
+.prod-link {
+  transition: all 0.5s ease-in-out; }
+  .prod-link:hover {
+    color: #009ffd; }
+  .prod-link:focus {
+    outline: none; }
+
+.navbar {
+  background-color: #2a2a72 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.img-size {
+  width: 13rem;
+  height: 13rem; }
+
+.product-wrapper .card {
+  border-color: transparent;
+  transition: all 1s linear; }
+.product-wrapper .card-footer {
+  background: transparent;
+  border-top: transparent;
+  transition: all 1s linear; }
+.product-wrapper:hover .card {
+  border: 0.04rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2); }
+.product-wrapper:hover .card-footer {
+  background: #f7f7f7; }
+.product-wrapper .img-container {
+  position: relative;
+  overflow: hidden; }
+  .product-wrapper .img-container:hover .card-image-top {
+    transition: all 1s linear;
+    transform: scale(1.2); }
+  .product-wrapper .img-container:hover .cart-btn {
+    transform: translate(0, 0); }
+.product-wrapper .cart-btn {
+  background: #009ffd;
+  color: #fceeee;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.2rem 0.4rem;
+  border: none;
+  border-radius: 0.5rem 0 0 0;
+  font-size: 1.4rem;
+  transform: translate(100%, 100%);
+  transition: all 1s linear; }
+  .product-wrapper .cart-btn:hover {
+    color: #2a2a72;
+    cursor: pointer; }
+
+/*# sourceMappingURL=App.css.map */

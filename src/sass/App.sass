@@ -1,0 +1,117 @@
+@import "variables"
+
+
+body
+  font-family: $source-san
+  background: $main-white !important
+  color: $main-black
+
+.text-title
+  font-family: $lobster
+  letter-spacing: 0.3rem
+  text-transform: uppercase
+
+.blue-text
+  color: $main-blue
+
+.light-blue-text
+  color: $light-blue
+
+.logo
+  width: 3rem
+  height: 3rem
+
+.btn-style
+  text-transform: capitalize
+  font-size: 1.4rem
+  background: transparent
+  color: $light-blue
+  border: 0.05rem solid $light-blue
+  border-radius: 0.5rem
+  padding: 0.35rem 0.5rem
+  margin: 0.2rem 0.5rem 0.2rem 0
+  transition: all 0.5s ease-in-out
+  &:hover
+    background: $light-blue
+    color: $main-blue
+  &:focus
+    outline: none
+
+.cart-btn-style
+  border-color: $main-yellow
+  color: $main-yellow
+  &:hover
+    background: $main-yellow
+    color: $main-blue
+
+.nav-style
+  background: $main-blue
+  .nav-link
+    color: $main-white !important
+    font-size: 1.5rem
+    text-transform: capitalize
+
+ul
+  list-style-type: none !important
+
+.prod-link
+  transition: all 0.5s ease-in-out
+  &:hover
+    color: $light-blue
+  &:focus
+    outline: none
+
+.navbar
+  background-color: $main-blue !important
+  //position: relative
+  //display: flex
+  //flex-wrap: wrap
+  //align-items: center
+  //justify-content: space-between
+  padding-top: 0 !important
+  padding-bottom: 0 !important
+
+.img-size
+  width: 13rem
+  height: 13rem
+
+.product-wrapper
+  .card
+    border-color: transparent
+    transition: all 1s  linear
+  .card-footer
+    background: transparent
+    border-top: transparent
+    transition: all 1s  linear
+  &:hover
+    .card
+      border: 0.04rem solid $border-black
+      box-shadow: 2px 2px 5px 0 $border-black
+    .card-footer
+      background: $footer-bg
+  .img-container
+    position: relative
+    overflow: hidden
+    &:hover
+      .card-image-top
+        transition: all 1s  linear
+        transform: scale(1.2)
+      .cart-btn
+        transform: translate(0, 0)
+
+  .cart-btn
+    background: $light-blue
+    color: $main-white
+    position: absolute
+    bottom: 0
+    right: 0
+    padding: 0.2rem 0.4rem
+    border: none
+    border-radius: 0.5rem 0 0 0
+    font-size: 1.4rem
+    transform: translate(100%, 100%)
+    transition: all 1s  linear
+    &:hover
+      color: $main-blue
+      cursor: pointer
+
