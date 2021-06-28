@@ -45,7 +45,12 @@ class Details extends Component {
                           back to products
                         </button>
                       </Link>
-                      <button className="btn-style cart-btn-style" disabled={!!inCart} onClick={()=>{value.addToCart(id)}}>
+                      <button className="btn-style cart-btn-style"
+                              disabled={!!inCart}
+                              onClick={()=>{
+                                value.addToCart(id);
+                                value.openModal(id)}}
+                      >
                         {inCart ? "inCart" : "add to cart"}
                       </button>
                     </div>

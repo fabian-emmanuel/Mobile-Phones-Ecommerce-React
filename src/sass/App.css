@@ -19,6 +19,10 @@ body {
   width: 3rem;
   height: 3rem; }
 
+.img {
+  width: 5rem;
+  height: 5rem; }
+
 .btn-style {
   text-transform: capitalize;
   font-size: 1.4rem;
@@ -103,5 +107,18 @@ ul {
   .product-wrapper .cart-btn:hover {
     color: #2a2a72;
     cursor: pointer; }
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .modal-container #modal {
+    background: #fceeee; }
 
 /*# sourceMappingURL=App.css.map */

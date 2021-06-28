@@ -8,19 +8,21 @@ class Product extends Component {
     const {id, title, img, price, inCart} = this.props.product;
     return (
        <div className="product-wrapper col-9 mx-auto col-md-6 col-lg-3 my-3">
+         <div className="card">
          <ProductConsumer>
            {value => (
-           <div className="img-container p-5 card" onClick={()=>{value.handleDetail(id )}}>
+           <div className="img-container p-5" onClick={()=>{value.handleDetail(id)}}>
              <Link to="/details">
              <img src={img} alt="product img" className="card-image-top img-size" />
              </Link>
-             <button className="cart-btn" disabled={!!inCart}>
-               {inCart ? (<p className="text-capitalize mb-0">in cart</p>) : (<i className="fas fa-cart-plus"/>)}
+             <button className="cart-btn" disabled={!!inCart} onClick={()=>{value.addToCart(id); value.openModal(id)}}>
+               {inCart ? "In Cart" : <i className="fas fa-cart-plus"/>}
              </button>
            </div>
 
            )}
          </ProductConsumer>
+         </div>
          {/* cart footer*/}
          <div className="card-footer d-flex justify-content-between">
            <p className="align-self-center mb-0">
